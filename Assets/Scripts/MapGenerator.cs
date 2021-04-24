@@ -13,8 +13,6 @@ public class MapGenerator : MonoBehaviour
 
     public float clusterSize = 2.0f;
 
-    public TilemapCollider2D tilemapCollider;
-
     // Start is called before the first frame update
     void Start()
     {
@@ -51,8 +49,6 @@ public class MapGenerator : MonoBehaviour
                 }
             }
         }
-
-        tilemapCollider.ProcessTilemapChanges();
     }
 
     // Update is called once per frame
