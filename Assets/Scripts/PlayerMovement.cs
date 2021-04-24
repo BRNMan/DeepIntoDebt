@@ -31,11 +31,10 @@ public class PlayerMovement : MonoBehaviour
         velocity.x = Input.GetAxisRaw("Horizontal");
         velocity.y = Input.GetAxisRaw("Vertical");
 
-        myAnimator.SetFloat("MoveX", velocity.x);
-        myAnimator.SetFloat("MoveY", velocity.y);
-
         if(Vector2.Distance(velocity, Vector2.zero) > 0.01) {
             playerState = PlayerState.walking;
+            myAnimator.SetFloat("MoveX", velocity.x);
+            myAnimator.SetFloat("MoveY", velocity.y);
             myAnimator.SetBool("isWalking", true);
             
             velocity.Normalize();
