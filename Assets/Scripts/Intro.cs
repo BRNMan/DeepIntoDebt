@@ -22,7 +22,6 @@ public class Intro : MonoBehaviour
         yield return new WaitForSeconds(1.5f);
         text.CrossFadeAlpha(0.0f, 1.5f, true);
         yield return new WaitForSeconds(2.5f);
-        //SceneManager.LoadScene()
-
+        SceneManager.LoadScene("MainMenu");
     }
 }
