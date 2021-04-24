@@ -14,6 +14,9 @@ TextureImporter:
   - first:
       213: 3114075161401705666
     second: Player Walk Forward Anim_3
+  - first:
+      213: 7348569495495791462
+    second: Player Walk Forward Anim_4
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -100,7 +103,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
-    buildTarget: WebGL
+    buildTarget: Windows Store Apps
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -120,7 +123,7 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 32
+        width: 128
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -139,7 +142,7 @@ TextureImporter:
       name: Player Walk Forward Anim_1
       rect:
         serializedVersion: 2
-        x: 32
+        x: 0
         y: 0
         width: 32
         height: 64
@@ -160,7 +163,7 @@ TextureImporter:
       name: Player Walk Forward Anim_2
       rect:
         serializedVersion: 2
-        x: 64
+        x: 32
         y: 0
         width: 32
         height: 64
@@ -181,7 +184,7 @@ TextureImporter:
       name: Player Walk Forward Anim_3
       rect:
         serializedVersion: 2
-        x: 96
+        x: 64
         y: 0
         width: 32
         height: 64
@@ -194,6 +197,27 @@ TextureImporter:
       bones: []
       spriteID: 2c447373cda673b20800000000000000
       internalID: 3114075161401705666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Walk Forward Anim_4
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6635c42950d5bf560800000000000000
+      internalID: 7348569495495791462
       vertices: []
       indices: 
       edges: []
