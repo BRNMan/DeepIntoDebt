@@ -28,6 +28,11 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
+        MovePlayer();
+    }
+
+
+    void MovePlayer() {
         velocity.x = Input.GetAxisRaw("Horizontal");
         velocity.y = Input.GetAxisRaw("Vertical");
 
@@ -43,5 +48,5 @@ public class PlayerMovement : MonoBehaviour
             playerState = PlayerState.idle;
             myAnimator.SetBool("isWalking", false);
         }
-    }
+    }    
 }

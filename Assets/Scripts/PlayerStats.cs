@@ -43,6 +43,7 @@ public class PlayerStats : MonoBehaviour
     }
 
     public void DamagePlayer(float damage) {
+        //Particle effect for attack.
         health -= damage;
         UpdateHealthBar();
         //Game Over?

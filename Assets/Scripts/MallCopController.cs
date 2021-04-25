@@ -26,6 +26,8 @@ public class MallCopController : MonoBehaviour
     public float chargeSpeed = 6.0f;
     public float sightDistance = 3.0f;
 
+    private float elapsedDamageTime;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -101,5 +103,24 @@ public class MallCopController : MonoBehaviour
         animator.SetBool("isWalking", true);
         rigidBody.MovePosition(this.rigidBody.position + velocity*speed*Time.deltaTime); 
     }
+
+    public void OnTriggerStay2D(Collider2D other) {
+        if(other.CompareTag("Player")) {
+            if(elapsedTime == 0.0f) {
+                other.GetComponent<PlayerStats>().DamagePlayer(4.0f);
+            }
+            elapsedTime += Time.deltaTime;
+            if(elapsedTime > 1.0f) {
+                elapsedTime = 0.0f;
+            }
+        }
+    }
+
+    public void OnTriggerLeave2D(Collider2D other) {
+        if(other.CompareTag("Player")) {
+            elapsedTime = 0.0f;
+        }
+    }
+
 
 }

@@ -17,11 +17,6 @@ public class MapGenerator : MonoBehaviour
     void Start()
     {
         GenerateFloor();
-        SetCameraBounds();
-    }
-
-    private void SetCameraBounds() {
-        
     }
 
     private void GenerateFloor() {
